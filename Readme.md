@@ -10,7 +10,7 @@ The functions are in the namespace "Easing". I wrote a small example for moving 
 ##Example code
 Please note that this example is the most basic way of using the library – which also means that it will lock up the Arduino while the servo is moving, so if you need to perform other operations simultaneously with the movement (e.g. move other servos, fade light, etc.), consider stepping up to using the main loop, `micros()` for timing and a global counter for controlling the servo position instead of using the `moveServo()` function.
 
-```
+```c
 /*
 * Easing
 * Tobias Toft 
