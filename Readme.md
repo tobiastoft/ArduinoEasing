@@ -1,4 +1,4 @@
-#Simple easing library for Arduino
+# Simple easing library for Arduino
 I wrote this library as a part of the code I wrote my final project "Synthesising Personality", but I thought maybe other people could use it too. It will be on Github very, very soon.
 
 It's an implementation of Robert Penner's easing functions (all credits should go to him). I've kept them generic (basically easing from one floating point value to another), but the only thing I have used them for is controlling servo motors and a little bit of playing around with LEDs.
@@ -7,8 +7,8 @@ The code is not very well written; it was just something I put together because 
 
 The functions are in the namespace "Easing". I wrote a small example for moving a servo, it's included in the library zip. It's installed like any other Arduino library.
 
-##Example code
-Please note that this example is the most basic way of using the library – which also means that it will lock up the Arduino while the servo is moving, so if you need to perform other operations simultaneously with the movement (e.g. move other servos, fade light, etc.), consider stepping up to using the main loop, `micros()` for timing and a global counter for controlling the servo position instead of using the `moveServo()` function.
+##  Example code
+Please note that this example is the most basic way of using the library – which also means that it will lock up the Arduino while the servo is moving, so if you need to perform other operations simultaneously with the movement (e.g. move other servos, fade light, etc.), consider stepping up to using the main loop, `millis()` for timing and a global counter for controlling the servo position instead of using the `moveServo()` function.
 
 ```c
 /*
